@@ -11,7 +11,8 @@ public class App {
      System.out.println("c)Multiplicar");
      System.out.println("d)Dividir");
      System.out.println("e)Potenciacion");
-     System.out.println("f)cerrar");
+     System.out.println("f)Raiz");
+     System.out.println("g)cerrar");
      System.out.println("Ingrese opcion para entrar el Menu");
      char opc = lector.next().charAt(0);
      
@@ -69,6 +70,17 @@ public class App {
             Resultado=Math.pow(ValorA,ValorB);
             System.out.println("El Resultado de Valor A y su Exponente Valor B"+ValorA+ "+" +ValorB+" es de:"+Resultado);
              case 'f':
+             System.out.println("Ingrese el valor de A");
+             ValorA=lector.nextDouble();
+             if(ValorA <=0){
+                System.out.println("La raiz no puede ser 0 o negativo");
+              } else{
+                Math.sqrt(ValorA);
+                System.out.println("la raiz del valor de a "+ValorA+"Resultado");
+              }
+            
+            
+            case 'g':
           System.out.println("Saliendo de la App");
 
           default:
